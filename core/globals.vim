@@ -3,12 +3,12 @@
 let g:is_win = (has('win32') || has('win64')) ? v:true : v:false
 let g:is_linux = (has('unix') && !has('macunix')) ? v:true : v:false
 let g:is_mac = has('macunix') ? v:true : v:false
-let g:logging_level = 'info'
+let g:logging_level = 'debug'
 "}}
 
 "{{ Builtin variables
 " Disable Python2 support
-"let g:loaded_python_provider = 0
+let g:loaded_python_provider = 0
 
 " Disable perl provider
 let g:loaded_perl_provider = 0
@@ -33,5 +33,3 @@ else
   echoerr 'Python 3 executable not found! You must install Python 3 and set its PATH correctly!'
 endif
 
-" Custom mapping <leader> (see `:h mapleader` for more info)
-let g:mapleader = ','
