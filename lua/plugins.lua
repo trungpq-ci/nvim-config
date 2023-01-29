@@ -74,15 +74,16 @@ return require('packer').startup(function(use)
   ------------------------------ File Search ------------------------------
 
   -- File search, tag search and more
-  -- use {
-    -- 'nvim-telescope/telescope.nvim',
-    -- requires = {
-      -- {'nvim-lua/plenary.nvim'},
-      -- {'kyazdani42/nvim-web-devicons'},
-      -- {'nvim-treesitter/nvim-treesitter'}
-    -- },
-    -- after = 'nvim-treesitter'
-  -- }
+  use {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.1',
+    requires = {
+      {'nvim-lua/plenary.nvim'},
+      {'kyazdani42/nvim-web-devicons'},
+      {'nvim-treesitter/nvim-treesitter'}
+    },
+    after = 'nvim-treesitter'
+  }
   -- use { "Yggdroot/LeaderF", cmd = "Leaderf",
   --   run = ":LeaderfInstallCExtension"
   -- }
