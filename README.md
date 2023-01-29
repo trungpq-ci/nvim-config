@@ -24,8 +24,10 @@ nvim will run init.vim
 ## Package management
 
 1. plugins are manage by [Packer](https://github.com/wbthomason/packer.nvim)
-1. plugins are in `./lua/plugins.lua`
-2. calling `lua require('plugins') from init.vim
+2. plugins are in `./lua/plugins.lua`
+3. calling `lua require('plugins')` from init.vim
+4. [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+5. [language-server](https://github.com/hrsh7th/nvim-cmp)
 
 ## VimTex
 
