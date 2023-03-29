@@ -7,6 +7,7 @@ My repository for Neo-vim config
 1. Install NeoVim
 2. Install prerequiste packages in `setup.sh`
 3. Open nvim, run `:PackerSync`
+4. Install terminal that support true color
 
 ## Debug
 
@@ -45,6 +46,7 @@ from terminal, `sudo tlmgr install latexmk`
 3. [jdhao config](https://github.com/jdhao/nvim-config)
 4. [collection of vim theme](https://vimcolorschemes.com/)
 5. [How to use lua language to config neovim](https://github.com/nanotee/nvim-lua-guide)
+6. [Alacrity](https://alacritty.org/)
 
 ## Plugins references
 1. [VimTex Tutorial blog](https://www.ejmastnak.com/tutorials/vim-latex/vimtex.html)

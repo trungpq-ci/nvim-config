@@ -57,3 +57,6 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
+if (has("termguicolors"))
+  set termguicolors
+endif
