@@ -47,7 +47,13 @@ from terminal, `sudo tlmgr install latexmk`
 4. [collection of vim theme](https://vimcolorschemes.com/)
 5. [How to use lua language to config neovim](https://github.com/nanotee/nvim-lua-guide)
 6. [Alacrity](https://alacritty.org/)
+7. [config vim with lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 
 ## Plugins references
 1. [VimTex Tutorial blog](https://www.ejmastnak.com/tutorials/vim-latex/vimtex.html)
 2. [VimTex github](https://github.com/lervag/vimtex)
+
+## Detail
+1. [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp) : neovim's built-in language server client
+2. [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) : completion engine, use "cmp-nvim-lsp"
+
