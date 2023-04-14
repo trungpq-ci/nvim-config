@@ -59,7 +59,7 @@ return require('packer').startup(function(use)
   ------------------------------ Python ------------------------------
 
   -- Indent
-  -- use {'Vimjas/vim-python-pep8-indent', ft = {'python'}}
+  use {'Vimjas/vim-python-pep8-indent', ft = {'python'}}
 
   -- Python-related text object
   -- use { "jeetsukumaran/vim-pythonsense", ft = { "python" } }
@@ -84,14 +84,14 @@ return require('packer').startup(function(use)
     },
     after = 'nvim-treesitter'
   }
-  -- use { "Yggdroot/LeaderF", cmd = "Leaderf",
-  --   run = ":LeaderfInstallCExtension"
-  -- }
+  use { "Yggdroot/LeaderF", cmd = "Leaderf",
+    run = ":LeaderfInstallCExtension"
+  }
 
   -- File explorer
   -- use {
     -- 'kyazdani42/nvim-tree.lua',
-    -- requires = { 'kyazdani42/nvim-web-devicons' },
+    -- requires = { 'nvim-tree/nvim-web-devicons' },
     -- config = [[require('config.nvim-tree')]]
   -- }
 
@@ -126,8 +126,12 @@ return require('packer').startup(function(use)
 
   ------------------------------ Display ------------------------------
 
-  -- icons
-  -- use {'kyazdani42/nvim-web-devicons', event = 'VimEnter'}
+  -- fonts
+  -- use {'kyazdani42/nvim-web-devicons'}
+  
+  use {'kyazdani42/nvim-web-devicons', event = "VimEnter"}
+  -- Patched fonts
+  use {'ryanoasis/vim-devicons'}
 
   -- notification plugin
     -- use {
@@ -140,12 +144,12 @@ return require('packer').startup(function(use)
     -- }
 
   -- Status line
-  -- use {
-    -- 'nvim-lualine/lualine.nvim',
-    -- event = 'VimEnter',
-    -- config = [[require('config.statusline')]],
-    -- requires = { 'kyazdani42/nvim-web-devicons' }
-  -- }
+  use {
+    'nvim-lualine/lualine.nvim',
+    event = 'VimEnter',
+    config = [[require('config.statusline')]],
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- Buffer line
   -- use {
@@ -167,8 +171,6 @@ return require('packer').startup(function(use)
   -- show and trim trailing whitespaces
   -- use {'jdhao/whitespace.nvim', event = 'VimEnter'}
 
-  -- Patched fonts
-  -- use {'ryanoasis/vim-devicons'}
 
   if packer_bootstrap then
     require('packer').sync()
