@@ -51,12 +51,12 @@ set cpoptions+=x  " stay at seach item when <esc>
 set cmdheight=2
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-if (has("termguicolors"))
-  set termguicolors
-endif
+" Font
+set encoding=utf8
+"set guifont=Ubuntu\ Mono\ Nerd\ Font\ Complete\ Mono:h11
+set guifont=Hack:h11

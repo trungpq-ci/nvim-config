@@ -1,4 +1,8 @@
-set background=dark
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+
 " let ayucolor="dark"
 " colorscheme ayu
 " colorscheme vim-monokai-tasty
@@ -10,3 +14,7 @@ set background=dark
 " let g:everforest_background = 'medium'
 " let g:everforest_better_performance = 1
 colorscheme everforest
+
+set background=dark
+highlight Normal guibg=none
+highlight EndOfBuffer guibg=none
