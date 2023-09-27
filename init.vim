@@ -5,9 +5,9 @@
 
 let s:core_conf_files = [
       \ 'globals.vim',
-      \ 'plugins.vim',
       \ 'options.vim',
       \ 'mappings.vim',
+      \ 'plugins.vim',
       \ 'themes.vim'
       \ ]
 

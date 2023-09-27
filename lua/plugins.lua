@@ -76,7 +76,7 @@ return require('packer').startup(function(use)
   -- File search, tag search and more
   use {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.1',
+    tag = '0.1.3',
     requires = {
       {'nvim-lua/plenary.nvim'},
       {'kyazdani42/nvim-web-devicons'},
@@ -161,10 +161,10 @@ return require('packer').startup(function(use)
   --
   -- Themes
   --
-  use {'ayu-theme/ayu-vim'}
-  use {'patstockwell/vim-monokai-tasty'}
+  use {'navarasu/onedark.nvim'}
+  -- use {'ayu-theme/ayu-vim'}
   -- use {'patstockwell/vim-monokai-tasty'}
-  use {'crispybaccoon/dawn.vim'}
+  -- use {'crispybaccoon/dawn.vim'}
   use({"NLKNguyen/papercolor-theme"})
 
 
