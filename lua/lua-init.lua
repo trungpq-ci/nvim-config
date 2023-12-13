@@ -1,2 +1,2 @@
 -- plugin installation
-require 'plugins'
+require 'plugins_lazy'

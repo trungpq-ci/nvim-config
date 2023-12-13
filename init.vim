@@ -2,7 +2,6 @@
 " Template: https://github.com/jdhao/nvim-config/
 " Author: Trung Phung
 
-
 let s:core_conf_files = [
       \ 'globals.vim',
       \ 'options.vim',
